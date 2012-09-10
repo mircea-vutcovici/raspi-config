@@ -1,8 +1,10 @@
-#!/bin/sh
+#! /bin/bash
 # Part of raspi-config http://github.com/asb/raspi-config
 #
 # See LICENSE file for copyright and license details
 
+TEXTDOMAINDIR=/usr/share/locale
+TEXTDOMAIN=raspi-config
 
 if [ $(id -u) -ne 0 ]; then
   printf $"Script must be run as root. Try 'sudo raspi-config'\n"
@@ -115,8 +117,8 @@ set_overscan() {
 }
 
 do_overscan() {
-  whiptail --yesno $"What would you like to do with overscan" 20 60 2 \
-    --yes-button Disable --no-button Enable 
+  whiptail --yesno $"What would you like to do with display overscan?" 20 60 2 \
+    --yes-button $"Disable" --no-button $"Enable"
   RET=$?
   if [ $RET -eq 0 ] || [ $RET -eq 1 ]; then
     ASK_TO_REBOOT=1
@@ -152,6 +154,7 @@ do_memory_split() {
     return 1
   fi
   AVAILABLE_SPLITS="240 224 192 128"
+  PHYSICAL_MEMORY_SIZE=256
   MEMSPLIT_LIST=()
   MEMSPLIT_DESCRIPTION=""
   for SPLIT in $AVAILABLE_SPLITS;do
@@ -160,8 +163,9 @@ do_memory_split() {
       MEMSPLIT_DESCRIPTION=$( printf $"Current: %sMiB for ARM, %sMiB for VideoCore" ${CURRENT_MEMSPLIT} $((256 - $CURRENT_MEMSPLIT)) )
     fi
     MEMSPLIT_LIST=( "${MEMSPLIT_LIST[@]}" $SPLIT )
-    MEMSPLIT_LIST_DESCRIPTION=$SPLIT$"MiB for ARM, "$SPLIT$"MiB for VideoCore"
-    MEMSPLIT_LIST=( "${MEMSPLIT_LIST[@]}" "$MEMSPLIT_LIST_DESCRIPTION" )
+    MEMSPLIT_LIST_ITEM_VIDEOCORE=$(( $PHYSICAL_MEMORY_SIZE - $SPLIT ))
+    MEMSPLIT_LIST_ITEM_DESCRIPTION=$SPLIT$"MiB for ARM, "$MEMSPLIT_LIST_ITEM_VIDEOCORE$"MiB for VideoCore"
+    MEMSPLIT_LIST=( "${MEMSPLIT_LIST[@]}" "$MEMSPLIT_LIST_ITEM_DESCRIPTION" )
   done
   MEMSPLIT=$(whiptail --menu $"Set memory split.""\n$MEMSPLIT_DESCRIPTION" 20 60 10 "${MEMSPLIT_LIST[@]}" 3>&1 1>&2 2>&3)
   if [ $? -eq 0 ]; then
@@ -176,7 +180,7 @@ do_ssh() {
     return 1
   fi
   whiptail --yesno $"Would you like the SSH server enabled or disabled?" 20 60 2 \
-    --yes-button $"Enable" --no-button $"Disable"
+    --yes-button $"Enabled" --no-button $"Disabled"
   RET=$?
   if [ $RET -eq 0 ]; then
     update-rc.d ssh enable &&
@@ -191,7 +195,8 @@ do_ssh() {
 }
 
 do_boot_behaviour() {
-  whiptail --yesno $"Should we boot straight to desktop?" 20 60 2
+  whiptail --yesno $"Should we boot straight to desktop?" 20 60 2 \
+    --yes-button $"Yes" --no-button $"No"
   RET=$?
   if [ $RET -eq 0 ]; then # yes
     update-rc.d lightdm enable 2
@@ -221,7 +226,8 @@ do_finish() {
     telinit q
   fi
   if [ $ASK_TO_REBOOT -eq 1 ]; then
-    whiptail --yesno $"Would you like to reboot now?" 20 60 2
+    whiptail --yesno $"Would you like to reboot now?" 20 60 2 \
+      --yes-button $"Yes" --no-button $"No"
     if [ $? -eq 0 ]; then # yes
       reboot
     fi
@@ -230,7 +236,7 @@ do_finish() {
 }
 
 while true; do
-  FUN=$(whiptail --menu "Raspi-config" 20 80 12 --cancel-button Finish --ok-button Select \
+  FUN=$(whiptail --menu "Raspi-config" 20 80 12 --cancel-button $"Finish" --ok-button $"Select" \
     "info" $"Information about this tool" \
     "expand_rootfs" $"Expand root partition to fill SD card" \
     "overscan" $"Change display overscan" \
