@@ -3,8 +3,8 @@
 #
 # See LICENSE file for copyright and license details
 
-TEXTDOMAINDIR=/usr/share/locale
-TEXTDOMAIN=raspi-config
+TEXTDOMAINDIR=${TEXTDOMAINDIR:-/usr/share/locale}
+TEXTDOMAIN=${TEXTDOMAIN:-raspi-config}
 
 if [ $(id -u) -ne 0 ]; then
   printf $"Script must be run as root. Try 'sudo raspi-config'\n"
