@@ -163,7 +163,7 @@ msgstr "Schimbă parola pentru utilizatorul 'pi'"
 
 #: raspi-config:248
 msgid "Set locale"
-msgstr "Schimbă limba"
+msgstr "Schimbă locale"
 
 #: raspi-config:249
 msgid "Set timezone"
