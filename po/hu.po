@@ -1,0 +1,189 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-09-11 23:05-0400\n"
+"PO-Revision-Date: 2012-09-12 16:09+0100\n"
+"Last-Translator: gyeben <gyonkibendeguz@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.3\n"
+
+#: raspi-config:10
+msgid "Script must be run as root. Try 'sudo raspi-config'\\n"
+msgstr "Root jogosultság szükséges. Futtasd ezt: 'sudo raspi-config'\\n"
+
+#: raspi-config:17
+msgid ""
+"This tool provides a straight-forward way of doing initial \n"
+"configuration of the Raspberry Pi. Although it can be run \n"
+"at any time, some of the options may have difficulties if \n"
+"you have heavily customised your installation."
+msgstr ""
+"Ennek az eszköznek a segítségével egyszerűen állíthatod be \n"
+"a Raspberry Pi legfontosabb beállításait. Bármikor futtathatod \n"
+"ezt a programot, habár nehézségekbe ütközhetsz, ha már \n"
+"személyre szabtad a rendszert."
+
+#: raspi-config:62
+msgid "Starting"
+msgstr "Indítás:"
+
+#: raspi-config:69
+msgid "Usage:"
+msgstr "Használat:"
+
+#: raspi-config:76
+msgid ""
+"Root partition has been resized.\\nThe filesystem will be enlarged upon the "
+"next reboot"
+msgstr ""
+"A root partíció át lett méretezve.\\nA fájlrendszer méretének növeléséhez"
+"\\nújra kell indítani a rendszert."
+
+#: raspi-config:120
+msgid "What would you like to do with display overscan?"
+msgstr "Engedélyezve vagy letiltva legyen az overscan?"
+
+#: raspi-config:121
+msgid "Disable"
+msgstr "Letiltva"
+
+#: raspi-config:121
+msgid "Enable"
+msgstr "Engedélyezve"
+
+#: raspi-config:132
+msgid "You will now be asked to enter a new password for the pi user"
+msgstr ""
+"A rendszer meg fog kérni, hogy adj meg egy új jelszót a pi felhasználóhoz"
+
+#: raspi-config:134
+msgid "Password changed successfully"
+msgstr "Jelszó sikeresen megváltoztatva"
+
+#: raspi-config:139
+msgid "Reloading keymap. This may take a short while\\n"
+msgstr "Billentyűzetkiosztás újratöltése. Ez eltarthat egy darabig\\n"
+
+#: raspi-config:163
+msgid "Current: %sMiB for ARM, %sMiB for VideoCore"
+msgstr "Jelenlegi felosztás: %sMiB az ARM-nak, %sMiB a VideoCore-nak"
+
+#: raspi-config:167
+msgid "%sMiB for ARM, %sMiB for VideoCore"
+msgstr "%sMiB az ARM-nak, %sMiB a VideoCore-nak"
+
+#: raspi-config:170
+msgid "Set memory split."
+msgstr "Memóriaelosztás beállítása."
+
+#: raspi-config:179
+msgid "Initial ssh key generation still running. Please wait and try again."
+msgstr "Az ssh kulcs generálása még folyamatban van. Próbáld meg később."
+
+#: raspi-config:182
+msgid "Would you like the SSH server enabled or disabled?"
+msgstr "Engedélyezve vagy letiltva legyen az SSH szerver?"
+
+#: raspi-config:183
+msgid "Enabled"
+msgstr "Engedélyezve"
+
+#: raspi-config:183
+msgid "Disabled"
+msgstr "Letiltva"
+
+#: raspi-config:188
+msgid "SSH server enabled"
+msgstr "SSH szerver engedélyezve"
+
+#: raspi-config:191
+msgid "SSH server disabled"
+msgstr "SSH szerver letiltva"
+
+#: raspi-config:198
+msgid "Should we boot straight to desktop?"
+msgstr "Bootolás után rögtön be legyen töltve az ablakkezelő?"
+
+#: raspi-config:199 raspi-config:230
+msgid "Yes"
+msgstr "Igen"
+
+#: raspi-config:199 raspi-config:230
+msgid "No"
+msgstr "Nem"
+
+#: raspi-config:216
+msgid "To start raspi-config again, run 'sudo raspi-config'\\n"
+msgstr ""
+"A raspi-config ismételt futtatásához, futtasd ezt: 'sudo raspi-config'\\n"
+
+#: raspi-config:229
+msgid "Would you like to reboot now?"
+msgstr "Újra szeretnéd indítani a rendszert?"
+
+#: raspi-config:239
+msgid "Finish"
+msgstr "Befejezés"
+
+#: raspi-config:239
+msgid "Select"
+msgstr "Kiválasztás"
+
+#: raspi-config:240
+msgid "Information about this tool"
+msgstr "Információ a programról"
+
+#: raspi-config:241
+msgid "Expand root partition to fill SD card"
+msgstr "Root partíció méretének növelése"
+
+#: raspi-config:242
+msgid "Change display overscan"
+msgstr "Overscan beállítása"
+
+#: raspi-config:243
+msgid "Set keyboard layout"
+msgstr "Billentyűzetkiosztás módosítása"
+
+#: raspi-config:244
+msgid "Change password for 'pi' user"
+msgstr "'pi' felhasználó jelszavának módosítása"
+
+#: raspi-config:245
+msgid "Set locale"
+msgstr "Nyelv beállítása"
+
+#: raspi-config:246
+msgid "Set timezone"
+msgstr "Időzóna beállítása"
+
+#: raspi-config:247
+msgid "Change memory split"
+msgstr "Memóriaelosztás módosítása"
+
+#: raspi-config:248
+msgid "Enable or disable ssh server"
+msgstr "SSH szerver"
+
+#: raspi-config:249
+msgid "Start desktop on boot?"
+msgstr "Ablakkezelő auto. megnyitása"
+
+#: raspi-config:250
+msgid "Try to upgrade raspi-config"
+msgstr "Raspi-config frissítése"
+
+#~ msgid "MiB for ARM, "
+#~ msgstr "MiB az ARM-nak, "
+
+#~ msgid "MiB for VideoCore"
+#~ msgstr "MiB a VideoCore-nak"
