@@ -20,7 +20,7 @@ $ sudo LANG=ro_RO.UTF-8 $PROJECT_HOME/raspi-config
 Backup the old transaltion
 $ mv $PROJECT_HOME/po/ro.po $PROJECT_HOME/po/ro-old.po
 Update the translation
-$ msginit -l ro -i $PROJECT_HOME/po/raspi-config.pot -o $PROJECT_HOME/po/ro.po
+$ xgettext --language=Shell  --output=$PROJECT_HOME/po/raspi-config.pot $PROJECT_HOME/raspi-config
 $ msgmerge  --output-file=$PROJECT_HOME/po/ro.po $PROJECT_HOME/po/ro-old.po $PROJECT_HOME/po/raspi-config.pot
 $ vim $PROJECT_HOME/po/ro.po
 Compile, install and test the new translation (see above)
