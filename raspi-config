@@ -55,6 +55,9 @@ cat <<\EOF > /etc/init.d/resize2fs_once &&
 # Description:
 ### END INIT INFO
 
+TEXTDOMAINDIR=${TEXTDOMAINDIR:-/usr/share/locale}
+TEXTDOMAIN=${TEXTDOMAIN:-raspi-config}
+
 . /lib/lsb/init-functions
 
 case "$1" in
