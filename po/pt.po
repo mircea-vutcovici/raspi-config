@@ -1,27 +1,24 @@
-# Romanian translations for raspi-config package.
-# Traducerea în limba română pentru pachetul raspi-config.
+# Portuguese (Portugal) translations for raspi-config package.
 # Copyright (C) 2012 Alex Bradbury
 # This file is distributed under the same license as the raspi-config package. http://github.com/asb/raspi-config
-# Mircea Vutcovici <mirceavutcovici@gmail.com>, 2012.
+# sjfaustino
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: 20120910\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-09-12 14:17-0400\n"
-"PO-Revision-Date: 2012-09-10 20:00-0400\n"
-"Last-Translator: Mircea Vutcovici <mirceavutcovici@gmail.com>\n"
-"Language-Team: Romanian\n"
-"Language: ro\n"
+"PO-Revision-Date: 2012-09-11 20:00-0400\n"
+"Last-Translator: sjfaustino\n"
+"Language-Team: Portugal\n"
+"Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
-"20)) ? 1 : 2;\n"
 
 #: raspi-config:10
 msgid "Script must be run as root. Try 'sudo raspi-config'\\n"
-msgstr "Acest script trebuie rulat ca root. Incercaţi 'sudo raspi-config'"
+msgstr "O script deve ser executado como utilizador root. Tente 'sudo raspi-config'\\n"
 
 #: raspi-config:17
 msgid ""
@@ -30,157 +27,158 @@ msgid ""
 "at any time, some of the options may have difficulties if \n"
 "you have heavily customised your installation."
 msgstr ""
-"Acest utilitar oferă un mod simplificat pentru a face \n"
-"configurarea iniţială pentru Raspberrz Pi. Deşi poate fi rulat \n"
-"oricând, parte din opţiuni ar putea să aibă dificultăţi dacă \n"
-"aţi personalizat instalarea dumneavoastră."
+"Esta ferramenta fornece uma maneira prática de efectuar a configuração\n"
+"inicial do Raspberry Pi. Apesar de poder ser executada a qualquer \n"
+"altura, algumas das opções podem encontrar dificuldades se tiver\n"
+"efectuado alterações substanciais na sua instalãção."
 
 #: raspi-config:65
 msgid "Starting"
-msgstr "Pornesc"
+msgstr "Começando"
 
 #: raspi-config:72
 msgid "Usage:"
-msgstr "Întrebuinţare:"
+msgstr "Maneira de usar:"
 
 #: raspi-config:79
 msgid ""
 "Root partition has been resized.\\nThe filesystem will be enlarged upon the "
 "next reboot"
 msgstr ""
-"Partiţia radacină a fost redimensionată.\\nSistemul de fişiere o să fie "
-"mărit la următoarea repornire a systemului"
+"O tamanho da partição de raiz foi alterado.\n"
+"O sistema de ficheiros será aumentado na próxima re-inicialização"
 
 #: raspi-config:123
 msgid "What would you like to do with display overscan?"
-msgstr "Ce vrei să faci cu suprabaleierea (overscan) pentru ecran?"
+msgstr "O que deseja fazer com o overscan do monitor?"
 
 #: raspi-config:124
 msgid "Disable"
-msgstr "Dezactivează"
+msgstr "Desactivar"
 
 #: raspi-config:124
 msgid "Enable"
-msgstr "Activează"
+msgstr "Activar"
 
 #: raspi-config:135
 msgid "You will now be asked to enter a new password for the pi user"
-msgstr "Vi se va cere acum să introduceţi o nouă parolă pentru utilizatorul pi"
+msgstr ""
+"Será pedido de seguida que introduza uma nova password para o utilizador pi"
 
 #: raspi-config:137
 msgid "Password changed successfully"
-msgstr "Parola a fost schimbată cu success"
+msgstr "Palavra-chave alterada com sucesso"
 
 #: raspi-config:142
 msgid "Reloading keymap. This may take a short while\\n"
-msgstr "Reincarc harta de taste (kezmap). O sa ia ceva timp\\n"
+msgstr "Carregando o keymap novamente. Esta operação pode levar algum tempo\\n"
 
 #: raspi-config:166
 msgid "Current: %sMiB for ARM, %sMiB for VideoCore"
-msgstr "Curent: %sMiB pentru ARM, %sMiB pentru VideoCore"
+msgstr "Actualmente: %sMiB para o ARM, %sMiB para o VideoCore"
 
 #: raspi-config:170
 msgid "%sMiB for ARM, %sMiB for VideoCore"
-msgstr "%sMiB pentru ARM, %sMiB pentru VideoCore"
+msgstr "%sMiB para o ARM, %sMiB para o VideoCore"
 
 #: raspi-config:173
 msgid "Set memory split."
-msgstr "Setează împărţirea memoriei."
+msgstr "Configurar a divisão de memória."
 
 #: raspi-config:182
 msgid "Initial ssh key generation still running. Please wait and try again."
 msgstr ""
-"Generarea cheii iniţiale ssh încă rulează. Vă rugăm să aşteptaţi şi să "
-"reincercaţi."
+"A geração inicial da chave ssh ainda se encontra a correr. Por favor aguarde "
+"e tente novamente."
 
 #: raspi-config:185
 msgid "Would you like the SSH server enabled or disabled?"
-msgstr "Doriţi să aveţi serviciul SSH activat sau dezactivat?"
+msgstr "Deseja o servidor SSH activado ou desactivado?"
 
 #: raspi-config:186
 msgid "Enabled"
-msgstr "Activat"
+msgstr "Activar"
 
 #: raspi-config:186
 msgid "Disabled"
-msgstr "Dezactivat"
+msgstr "Desactivar"
 
 #: raspi-config:191
 msgid "SSH server enabled"
-msgstr "Serviciul SSH este activat"
+msgstr "Servidor SSH activado"
 
 #: raspi-config:194
 msgid "SSH server disabled"
-msgstr "Serviciul ssh este dezactivat"
+msgstr "Servidor SSH desactivado"
 
 #: raspi-config:201
 msgid "Should we boot straight to desktop?"
-msgstr "Doriţi interfaţa grafică la pornirea sistemului?"
+msgstr "Devo iniciar directamente para o ambiente de trabalho?"
 
 #: raspi-config:202 raspi-config:233
 msgid "Yes"
-msgstr "Da"
+msgstr "Sim"
 
 #: raspi-config:202 raspi-config:233
 msgid "No"
-msgstr "Nu"
+msgstr "Não"
 
 #: raspi-config:219
 msgid "To start raspi-config again, run 'sudo raspi-config'\\n"
-msgstr "Ca să porniţi raspi-config din nou, rulaţi 'sudo raspi-config'\\n"
+msgstr "Para iniciar o raspi-config novamente, execute 'sudo raspi-config'\\n"
 
 #: raspi-config:232
 msgid "Would you like to reboot now?"
-msgstr "Doriţi să reporniţi sistemul acum?"
+msgstr "Deseja reiniciar agora?"
 
 #: raspi-config:242
 msgid "Finish"
-msgstr "Ieşire"
+msgstr "Terminar"
 
 #: raspi-config:242
 msgid "Select"
-msgstr "Selectează"
+msgstr "Selecione"
 
 #: raspi-config:243
 msgid "Information about this tool"
-msgstr "Detalii despre acest utilitar"
+msgstr "Informação acerca desta aplicação"
 
 #: raspi-config:244
 msgid "Expand root partition to fill SD card"
-msgstr "Extinde partitia rădăcină (root) până umple cardul SD"
+msgstr "Aumentar a partição de raiz do cartão SD"
 
 #: raspi-config:245
 msgid "Change display overscan"
-msgstr "Schimbă suprabaleierea (overscan) ecranului"
+msgstr "Alterar o overscan do ecran"
 
 #: raspi-config:246
 msgid "Set keyboard layout"
-msgstr "Schimbă tastatura"
+msgstr "Configurar o aspecto do teclado"
 
 #: raspi-config:247
 msgid "Change password for 'pi' user"
-msgstr "Schimbă parola pentru utilizatorul 'pi'"
+msgstr "Alterar a palavra-chave do 'pi'"
 
 #: raspi-config:248
 msgid "Set locale"
-msgstr "Schimbă limba"
+msgstr "Configurar o locale"
 
 #: raspi-config:249
 msgid "Set timezone"
-msgstr "Schimbă fusul orar"
+msgstr "Configurar o fuso horário"
 
 #: raspi-config:250
 msgid "Change memory split"
-msgstr "Schimbă împărţirea memoriei"
+msgstr "Alterar a divisão de memória"
 
 #: raspi-config:251
 msgid "Enable or disable ssh server"
-msgstr "Activează sau dezactivează serviciul ssh"
+msgstr "Activar ou desactivar ssh"
 
 #: raspi-config:252
 msgid "Start desktop on boot?"
-msgstr "Dorţi interfaţa grafică la pornirea sistemului?"
+msgstr "Iniciar com o desktop?"
 
 #: raspi-config:253
 msgid "Try to upgrade raspi-config"
-msgstr "Actualizează raspi-config"
+msgstr "Upgrade do raspi-config"
